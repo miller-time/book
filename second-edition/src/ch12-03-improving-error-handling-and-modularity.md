@@ -39,11 +39,11 @@ Let’s address these problems by refactoring our project.
 
 ### Separation of Concerns for Binary Projects
 
-The organizational problem of allocating responsibility for multiple tasks to
-the `main` function responsible is common to many binary projects, so the Rust
-community has developed a kind of guideline process for splitting up the
-separate concerns of a binary program when `main` starts getting large. The
-process has the following steps:
+The organizational problem of delegating responsibility for multiple tasks out
+of the `main` function is common to many binary projects, so the Rust community
+has developed a kind of guideline process for splitting up the separate concerns
+of a binary program when `main` starts getting large. The process has the
+following steps:
 
 * Split your program into both a *main.rs* and a *lib.rs* and move your
 program’s logic into *lib.rs*.
