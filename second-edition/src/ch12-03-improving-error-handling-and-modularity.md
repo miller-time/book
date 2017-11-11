@@ -27,7 +27,7 @@ open it. Right now, if we’re in that situation, we’d print the `file not fou
 error message that would give the user the wrong advice!
 
 Fourth, we use `expect` repeatedly to deal with different errors, and if the
-user runs our programs without specifying enough arguments, they’ll get an
+user runs our program without specifying enough arguments, they’ll get an
 “index out of bounds” error from Rust that doesn’t clearly explain the problem.
 It would be better if all our error handling code was in one place so that
 future maintainers only have one place to consult in the code if the error
